@@ -1,0 +1,31 @@
+Oops
+####
+
+.. code-block:: python
+
+    def launch_missiles():
+        print "missiles launched."
+
+    def compute_stuff(x, y):
+        launch_missiles()
+        return 10
+
+    if compute_stuff(5, 10) == 10:
+        print "conditions not matched"
+    else:
+        launch_missiles()
+
+.. code-block:: haskell
+
+    compute_stuff :: Int -> Int -> Int
+    compute_stuff x y = do
+        launchMissiles
+        return 10
+
+    launchMissiles :: IO ()
+    launchMissiles = print "missiles launched."
+
+    main :: IO ()
+    main = if (compute_stuff 5 10) == 10
+           then print "Conditions not matched"
+           else launchMissiles

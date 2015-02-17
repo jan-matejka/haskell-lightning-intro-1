@@ -1,0 +1,22 @@
+Oops results
+############
+
+python ::
+
+    missiles launched.
+    conditions not matched
+
+haskell::
+
+    a.hs:3:9:
+        Couldn't match type ‘IO b0’ with ‘Int’
+        Expected type: IO () -> IO b0 -> Int
+          Actual type: IO () -> IO b0 -> IO b0
+        In a stmt of a 'do' block: launchMissiles
+        In the expression:
+          do { launchMissiles;
+               return 10 }
+        In an equation for ‘compute_stuff’:
+            compute_stuff x y
+              = do { launchMissiles;
+                     return 10 }

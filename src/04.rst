@@ -1,0 +1,28 @@
+Let's add even more documentation
+#################################
+
+.. code-block:: python
+
+    def compute_stuff(x, y):
+        """
+        :type x: int
+        :param x: age
+
+        :type y: int
+        :param y: age
+
+        :returns: int
+        """
+        return 10
+
+    print compute_stuff(5, 10)
+
+.. code-block:: haskell
+
+    type Age = Int
+
+    compute_stuff :: Age -> Age -> Int
+    compute_stuff x y = 10
+
+    main :: IO ()
+    main = print (compute_stuff 5 10)

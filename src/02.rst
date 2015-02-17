@@ -1,0 +1,15 @@
+Basic Example
+#############
+
+.. code-block:: python
+
+    def compute_stuff(x, y):
+        return 10
+
+    print compute_stuff(5, 10)
+
+.. code-block:: haskell
+
+    compute_stuff x y = 10
+
+    main = print (compute_stuff 5 10)
